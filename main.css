@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: Larsseit-Light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 7rem;
+    margin: 0.67em 0px;
+    line-height: 7rem;
+    font-family: 'Inter', sans-serif;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0px;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+    width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0px;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding-top: 16px;
+}
+
+.label {
+    opacity: 0.5;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+h3 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+h4 {
+    font-size: 1.8rem;
+    padding-top: 24px;
+    line-height: 2.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    transition: all 0.15s ease-out 0s;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.95;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    transition: all 0.15s ease-out 0s;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+section {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 100px 60px;
+    position: relative;
+    max-width: 1240px;
+}
+
+.second-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    grid-column: 1 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    position: sticky;
+}
+
+.hero-text {
+    grid-column: 1 / 9;
+    text-align: center;
+}
+
+.heading {
+    display: block;
+    grid-column: 2 / 8;
+}
+
+.left-block {
+    grid-column: 1 / 4;
+}
+
+.right-middle-block {
+    grid-column: 5 / 8;
+}
+
+.right-block {
+    grid-column: 6 / 9;
+}
+
+.big-right-block {
+    grid-column: 5 / 9;
+}
+
+.small-left-block {
+    grid-column: 1 / 5;
+}
+
+.margin-bottom-small {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-large {
+    margin-bottom: 50px;
+}
+
+.big-left-block {
+    grid-column: 1 / 5;
+}
+
+.logos-block {
+    width: 180px;
+}
+
+.signin {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 16px 20px;
+    display: inline-block;
+}
+
+.links a.signin {
+    color: rgb(255, 255, 255);
+}
+
+.logosmall {
+    width: 40px;
+    padding-top: 4px;
+    padding-right: 12px;
+}
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: rgb(0, 0, 0);
+    align-items: stretch;
+}
+
+.link-block1 {
+    grid-column: 1 / 4;
+    display: flex;
+    align-items: flex-start;
+}
+
+.big-image {
+    grid-column: 1 / 9;
+    width: 100%;
+    text-align: center;
+}
+
+.link-block a {
+    color: black;
+}
+
+.link-block {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.links a {
+    color: rgb(0, 0, 0);
+    margin-right: 24px;
+}
+
+.center {
+    text-align: center;
+}
+
+.pricingplans {
+    grid-column: 1 / 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brand {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: gray;
+}
+
+.smallwhitelogo {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+}
+
+.bottom {
+    margin-top: 24px;
+}
+
+.pre-order-offer-banner {
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    height: fit-content;
+    width: 400px;
+    margin: 16px;
+}
+
+.now-price-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 30px;
+    text-align: center;
+    margin: 30px 0px 3px;
+}
+
+.black-text {
+    color: black;
+}
+
+.maker {
+    background-color: rgb(64, 64, 255);
+    color: white;
+}
+
+.pro {
+    background: rgb(166, 64, 255);
+    color: white;
+}
+
+.pink {
+    color: rgb(255, 64, 220);
+}
+
+.btn.pink {
+    border: 1px solid rgb(255, 64, 220);
+}
+
+.left {
+    margin-left: 8px;
+}
+
+.gray {
+    opacity: 0.5;
+}
+
+.breakdown {
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.make {
+    color: rgb(64, 64, 255);
+}
+
+.prof {
+    color: rgb(166, 64, 255);
+}
+
+@keyframes intercom-lightweight-app-launcher {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+@keyframes intercom-lightweight-app-gradient {
+    opacity: 0;
+}
+
+@keyframes intercom-lightweight-app-messenger {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.intercom-lightweight-app {
+    position: fixed;
+    z-index: 2147483001;
+    width: 0px;
+    height: 0px;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+}
+
+.intercom-lightweight-app-gradient {
+    position: fixed;
+    z-index: 2147483002;
+    width: 500px;
+    height: 500px;
+    bottom: 0px;
+    right: 0px;
+    pointer-events: none;
+    background: radial-gradient(at right bottom, rgba(29, 39, 54, 0.16) 0%, rgba(29, 39, 54, 0) 72%);
+    animation: 200ms ease-out 0s 1 normal none running intercom-lightweight-app-gradient;
+}
+
+.intercom-lightweight-app-launcher {
+    position: fixed;
+    z-index: 2147483003;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(0, 0, 0, 0.16) 0px 2px 32px 0px;
+    animation: 250ms ease 0s 1 normal none running intercom-lightweight-app-launcher;
+}
+
+.intercom-lightweight-app-launcher:focus {
+    outline: none;
+}
+
+.intercom-lightweight-app-launcher-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    transition: transform 100ms linear 0s, opacity 80ms linear 0s;
+}
+
+.intercom-lightweight-app-launcher-icon-open {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.intercom-lightweight-app-launcher-icon-open svg {
+    width: 28px;
+    height: 32px;
+}
+
+.intercom-lightweight-app-launcher-icon-open svg path {
+    fill: rgb(255, 255, 255);
+}
+
+.intercom-lightweight-app-launcher-icon-self-serve {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.intercom-lightweight-app-launcher-icon-self-serve svg {
+    height: 56px;
+}
+
+.intercom-lightweight-app-launcher-icon-self-serve svg path {
+    fill: rgb(255, 255, 255);
+}
+
+.intercom-lightweight-app-launcher-custom-icon-open {
+    max-height: 36px;
+    max-width: 36px;
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.intercom-lightweight-app-launcher-icon-minimize {
+    opacity: 0;
+    transform: rotate(-60deg) scale(0);
+}
+
+.intercom-lightweight-app-launcher-icon-minimize svg {
+    width: 16px;
+}
+
+.intercom-lightweight-app-launcher-icon-minimize svg path {
+    fill: rgb(255, 255, 255);
+}
+
+.intercom-lightweight-app-messenger {
+    position: fixed;
+    z-index: 2147483003;
+    overflow: hidden;
+    background-color: white;
+    animation: 250ms ease-out 0s 1 normal none running intercom-lightweight-app-messenger;
+    width: 376px;
+    height: calc(100% - 40px);
+    max-height: 704px;
+    min-height: 250px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
+    border-radius: 8px;
+}
+
+.intercom-lightweight-app-messenger-header {
+    height: 75px;
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+
+.body-0oyxd {
+    font-family: 'Inter', sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-section {
+        gap: 48px 0px;
+    }
+
+    .small-left-block {
+        grid-column: 2 / 8;
+    }
+
+    section {
+        padding-left: 0px;
+        padding-right: 0px;
+        overflow-x: hidden;
+    }
+
+    h3 {
+        font-size: 3.3rem;
+        line-height: 3.4rem;
+    }
+
+    .second-section {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .heading {
+        grid-column: 2 / 8;
+    }
+
+    .right-middle-block {
+        grid-column: 2 / 8;
+    }
+
+    .left-block {
+        grid-column: 2 / 8;
+    }
+
+    .right-block {
+        grid-column: 2 / 8;
+    }
+
+    .big-right-block {
+        grid-column: 2 / 8;
+        text-align: center;
+    }
+
+    .footer {
+        display: block;
+        grid-auto-flow: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .link-block1 {
+        grid-column: 2 / 4;
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+        text-align: center;
+    }
+
+    .logosmall {
+        padding-right: 0px;
+    }
+
+    .big-left-block {
+        grid-column: 2 / 8;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.15rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .links {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        margin-bottom: 20px;
+        display: inline-block;
+        margin-right: 0px;
+    }
+
+    .pricing__card {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .pricingplans {
+        flex-wrap: wrap;
+    }
+
+    .big-image {
+        grid-column: 2 / 8;
+    }
+}
+
+@media print {
+    .intercom-lightweight-app {
+        display: none;
+    }
+}
